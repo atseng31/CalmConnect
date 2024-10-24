@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<head>
+    <title>Calm Connect</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  img {
+    width: 100%; /* or any custom size */
+    height: 100%;
+    object-fit: contain;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column-three{
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row-three:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+<body>
+
+	<div id="mySidenav" class="sidenav">
+		<a href="index.html">Home</a>
+		<a href="destress.html" style="color: #D5E0ED; background-color: #6C7DA8;">Destress</a>
+		<a href="resources.html">Resources</a>
+		<a href="garden.html" >Garden</a>
+		<a href="about.html">About</a>
+	</div>
+	<div id="distress-main" class="distress-main">
+        <img src="logo.png">
+        <div id="distress-content" class="distress-content">
+            <h2 style="color:#D5E0ED; font-size:2em"> Activities To Destress</h2>
+            <p style="color:#D5E0ED">Anxiety disorders are the most common mental health disorder in the United States, and anywhere from 1 in 10 to 1 in 13 people suffer from anxiety, with about 8% of children and teenagers experiencing an anxiety disorder. CalmConnect is hear to help! This page will guide you through activities to counteract your stress. </p>
+        
+        </div>
+        <div id="tab" class="tab">
+          <button class="tablinks" onclick="openCity(event, 'Art')">Arts & Crafts</button>
+          <button class="tablinks" onclick="openCity(event, 'Meditation')">Meditation</button>
+          <button class="tablinks" onclick="openCity(event, 'Exercise')">Exercise</button>
+          <button class="tablinks" onclick="openCity(event, 'Music')">Music</button>
+          <button class="tablinks" onclick="openCity(event, 'Reading')">Reading</button>
+
+        </div>
+        
+        <div id="Art" class="tabcontent">
+          <h3>Arts and Crafts</h3>
+          <p>Arts and crafts provide a relaxing and focused activity that can help reduce stress, anxiety, and negative thoughts, while also boosting self-esteem. Arts and crafts is also a form of self-expression.</p>
+          <h4>Here are some activities we recommend</h4>
+
+          <div class="row">
+            <div class="column" style="background-color:#F3EBE2; height: 100%">
+              <h2>Gratitude Drawing</h2>
+              <p>Focus on drawing on anything you are grateful for. Choose a journal or app, set a daily or weekly schedule, write down specific things you're grateful for, reflect on why you're grateful for each item, and revisit past entries for inspiration. Drawing can be a powerful way to enhance your appreciation of life and the world.</p>
+              <p>Focus on capturing the WHY of this special moment of gratitude and not getting wrapped up in the little details. Work quick, don’t stay in one place for too long, bounce around the paper, keep telling yourself this is a mindfulness meets art making exercise and how I feel is all that matters.</p>
+
+              <img src="gratitudeDrawing.jpg">
+            </div>
+            <div class="column" style="background-color: #F7F1E9; height: 100%">
+              <h2>Calm Down Jar</h2>
+              <p>A quiet visual experience whenever you need a calming moment. Encourage yourself to focus on the glittering contents as it settles down, and it invites you to allow that calming feeling to flow through your body, as you watch the glitter swirl and then settle. You can use a calm down jar to help reduce stress and anxiety. </p>
+              <img src="calmDownJar.jpeg">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="column" style="background-color:#F7F1E9; height: 100%"">
+              <h2>Mandala Coloring</h2>
+              <p>Mandala coloring is a therapeutic art form that involves coloring symmetrical, geometric patterns within a circular outline. Use color pencils or crayons are good for mandalas because they offer a lot of control.</p>
+              <img src="mandalaColoring.jpg">
+
+            </div>
+            <div class="column" style="background-color:#F3EBE2; height: 100%"">
+              <h2>Doodling For Stress</h2>
+              <p>Doodling can help reduce stress by activating the relaxation response and calming the amygdala, the part of the brain that controls the fight-or-flight response. The repetitive motion of drawing can also help you feel calm and reduce the stress hormone cortisol. </p>
+              <img src="doodle.jpg">
+
+            </div>
+          </div>
+
+
+          <h4>Ask our AI chatbot for more personalized arts and craft activites</h4>
+        <iframe
+        src="https://Calming-CalmConnect.hf.space"
+        frameborder="0"
+        width="500"
+        height="700"></iframe>
+        <script src="script.js"></script>
+        </div>
+        
+        <div id="Meditation" class="tabcontent">
+          <h3>Meditation</h3>
+          <p>Meditation is a practice that involves focusing or clearing your mind using a combination of mental and physical techniques. Depending on the type of meditation you choose, you can meditate to relax, reduce anxiety and stress, and more. Some people even use meditation to help them improve their health, such as using it to help adapt to the challenges of quitting tobacco products.</p> 
+          <div class="row-three">
+            <div class="column-three" style="background-color:#F3EBE2;">
+              <h2>Body Centered</h2>
+              <p>Body Centered meditation helps pay attention to parts of the body and bodily sensations in a gradual sequence from feet to head. This method can help people become more aware of their physical sensations, emotions, and feelings.</p>
+            </div>
+            <div class="column-three" style="background-color:#F7F1E9;">
+              <h2>Movement</h2>
+              <p>Movement meditation is good for people who find peace in action and want to develop body awareness.</p>
+            </div>
+            <div class="column-three" style="background-color:#F3EBE2;">
+              <h2>Mindfulness</h2>
+              <p>In mindfulness meditation, you pay attention to your thoughts as they pass through your mind. You don’t judge the thoughts or become involved with them. You simply observe and take note of any patterns..</p>
+            </div>
+          </div>
+          <h4>Ask our AI chatbot for more personalized meditation</h4>
+        <iframe
+        src="https://Calming-CalmConnect.hf.space"
+        frameborder="0"
+        width="500"
+        height="700"></iframe>
+        <script src="script.js"></script>
+        </div>
+
+        <div id="Exercise" class="tabcontent">
+          <h3>Exercise</h3>
+          <p>Exercise.</p>
+        </div>
+        
+        <div id="Music" class="tabcontent">
+          <h3>Music</h3>
+          <p>Music.</p>
+        </div>
+
+        <div id="Reading" class="tabcontent">
+          <h3>Reading</h3>
+          <p>Reading</p>
+        </div>
+
+
+        
+        <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        </script>
+
+
+
+</body>
+</html>

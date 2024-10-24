@@ -1,0 +1,327 @@
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #6C7DA8;
+}
+
+
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #D5E0ED;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #6C7DA8;
+  display: block;
+  position: relative;
+  top: 25%;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.sidenav a:hover {
+  color: #D5E0ED;
+  background-color: #6C7DA8;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+iframe 
+{
+ display: block; 
+ width: 100%; 
+ border: none; 
+ overflow-y: auto; 
+ overflow-x: hidden;
+}
+
+.distress-main {
+  margin-left: 200px;
+}
+
+
+.distress-content {
+  margin-left: 50px;
+  margin-right: 100px;
+}
+
+
+.resources-main {
+  margin-left: 200px;
+}
+
+
+.resources-content {
+  margin-left: 50px;
+  margin-right: 100px;
+}
+
+.garden-content {
+  margin-left: 50px;
+  margin-right: 100px;
+  width:100%;
+  float:left;
+  text-align:center;
+}
+.about-main {
+  margin-left: 200px;
+}
+
+
+.about-content {
+  margin-left: 50px;
+  margin-right: 100px;
+}
+
+#logo-section {
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  margin-bottom: 20px; /* Space between the image and main content */
+  padding-top: 20px; /* Optional padding to top if needed */
+}
+
+/* Main container styling */
+.main {
+  margin-left: 200px;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #6C7DA8;
+  position: relative;
+  z-index: 10;
+  clear: both; /* Clears floating elements if there are any */
+}
+
+.container {
+  background-color: #D5E0ED;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Styling for the main heading (h1) */
+h1 {
+  font-size: 1.5em;
+  margin-bottom: 48px;
+
+  /* Dark text color for the heading */
+  color: #6C7DA8;
+}
+
+/* Styling for the subheading (p) */
+p {
+  /* Medium font size */
+  font-size: 1.2em;
+
+  /* Lighter text color to differentiate it from the heading */
+  color: #666;
+}
+
+/* Styling the mood button container */
+.mood-selector {
+  /* Add margin for spacing above and below the mood buttons */
+  margin: 20px 0;
+}
+
+/* Styling for the mood buttons */
+.mood-btn {
+  font-size: 1.5em;
+
+  /* Remove default button background and border */
+  background: none;
+  border: none;
+
+  /* Pointer cursor to indicate the buttons are clickable */
+  cursor: pointer;
+
+  /* Margin between buttons */
+  margin: 30px 30px;
+
+  /* Add a smooth transform animation for hover effects */
+  transition: transform 0.2s;
+}
+
+.mood-btn:hover,
+.mood-btn.selected {
+  background-color: #F0E4D4;
+  transform: scale(1.5);
+  border-radius: 8px;
+}
+
+
+
+/* Styling for the textarea where users add notes */
+textarea {
+  /* Full width of the container */
+  width: 100%;
+
+  /* Set a fixed height */
+  height: 100px;
+
+  /* Margin for spacing above and below the textarea */
+  margin: 20px 0;
+
+  /* Padding inside the textarea for text readability */
+  padding: 10px;
+
+  /* Set a base font size */
+  font-size: 1em;
+
+  /* Rounded corners for the textarea */
+  border-radius: 5px;
+
+  /* Light border around the textarea */
+  border: 1px solid #ccc;
+}
+
+/* Styling for the Save button */
+#save-btn {
+  /* Padding for the button to increase click area */
+  padding: 10px 30px;
+
+  /* Font size for the button text */
+  font-size: 1em;
+
+  /* Pointer cursor to indicate the button is clickable */
+  cursor: pointer;
+  color: white;
+
+  /* Set a default background color */
+  background-color: #6C7DA8;
+
+  /* Remove the border and add rounded corners */
+  border: none;
+  border-radius: 5px;
+
+  /* Add a transition effect for the background color */
+  transition: background-color 0.3s;
+}
+
+/* Hover state styling for the Save button */
+#save-btn:hover {
+  /* Change the background color when hovered */
+  background-color: #F0E4D4;
+  color:black;
+}
+
+/* Styling for the "Your mood today" heading (h2) */
+h2 {
+  /* Add margin to create space above the heading */
+  margin-top: 30px;
+
+  /* Dark text color for contrast */
+  color: #333;
+}
+
+/* Styling for the section where today's mood is displayed */
+#today-mood {
+  /* Add margin for spacing above the displayed mood */
+  margin-top: 20px;
+
+  /* Larger font size to make the displayed mood stand out */
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #6C7DA8;
+  text-decoration-style: bold;
+}
+
+/* Styling for the message that appears after saving the mood */
+#save-message {
+  /* Add margin for spacing above the message */
+  margin-top: 20px;
+
+  /* Font size for the message text */
+  font-size: 1em;
+
+  /* Green color to indicate success */
+  color: green;
+}
+
+/* Hidden class to hide the message by default */
+.hidden {
+  display: none;
+}
+
+/* Style the tab */
+.tab {
+  margin-top: 50px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  margin-left: 50px;
+  width: 1050px;
+  border-radius: 10px;
+}
+
+/* Style the tab content */
+.tabcontent {
+  margin-left: 50px;
+  width: 1050px;
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+  background-color: #D5E0ED;
+  border-radius: 10px;
+
+}
+
+
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #D5E0ED;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #D5E0ED;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
