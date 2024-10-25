@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <title>Calm Connect</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+	<div id="mySidenav" class="sidenav">
+		<a href="index.html" style="color: #f1f1f1; background-color: #6C7DA8;">Home</a>
+		<a href="destress.html">Destress</a>
+		<a href="resources.html">Resources</a>
+		<a href="garden.html" >Garden</a>
+		<a href="about.html">About</a>
+	</div>
+    <div id="logo-section">
+        <img src="Frame 5.png" alt="Logo">
+    </div>
+
+	<div id="main" class="main">
+		<div class="row">
+			<div class="column" style="height: 100%"></div>
+			<div class="container">
+			<h1 class="mood-heading">How Are You Feeling Right Now?</h1>
+			<div class="mood-selector">
+				<button class="mood-btn" data-mood="excited">😃<br> Excited</button>
+				<button class="mood-btn" data-mood="happy">😊<br> Happy</button>
+				<button class="mood-btn" data-mood="calm">😌<br> Calm</button>
+				<button class="mood-btn" data-mood="anxious">😰<br> Anxious</button>
+				<button class="mood-btn" data-mood="sad">😢<br> Sad</button>
+				<button class="mood-btn" data-mood="tired">😴<br> Tired</button>
+				<button class="mood-btn" data-mood="angry">😠<br> Angry</button>
+			</div>
+			<textarea id="note" placeholder="Add a note to elaborate on your feelings..."></textarea>
+			<button id="save-btn">Save</button>
+			<div id="today-mood"></div>
+			<div id="save-message" class="hidden"></div>
+		<div id="chatbot" style="margin-top: 50px;">
+			<iframe
+			src="https://Calming-CalmConnect.hf.space"
+			frameborder="0"
+			width="200"
+			height="700"></iframe>
+		</div>
+
+		<script src="script.js"></script>
+
+	</div>
+
+
+	
+	
+
+</body>
+</html>
+
